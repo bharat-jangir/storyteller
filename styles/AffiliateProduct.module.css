@@ -1,0 +1,51 @@
+.AffiliateProducts_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.AffiliateProducts_heading{
+    width: 100%;
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+
+
+}
+.AffiliateProducts_Content_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+.Affiliate_poducts_wraper{
+    width: 90%;
+    background-color: whitesmoke;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Affiliate_product:hover{
+    transform: rotate(0.5deg);
+    
+}
+
+@media only screen and (max-width:768px){
+    .Affiliate_product{
+        max-width: 200px;
+    } 
+    .Affiliate_poducts_wraper{
+        margin: 0px 20px;
+        display: flex;
+        justify-content: center;
+    }   
+}
+@media only screen and (max-width:500px){
+    .Affiliate_product{
+        max-width: 100%;
+    }    
+}

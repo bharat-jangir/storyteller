@@ -1,0 +1,62 @@
+.contact_waydecsrcibe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.contact_Options{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.contact_Options div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.SocialIcon_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(123, 126, 123, 0.062);
+    border: 1px solid black;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+}
+.SocialIcon_container:hover{
+    background-color: rgba(6, 8, 6, 0.192);
+
+}
+.SocialIcon_container p{
+    color: black;
+    font-size: 2rem;
+    padding: 10px;
+}
+.SocialIcon_container a{
+    display: flex;
+    align-items: center; 
+    font-size: 2ex;
+    flex-wrap: wrap;
+    word-break: break-all;
+
+}
+.SocialIcon{
+    color: purple;
+    font-size: 5rem;
+
+}
+.SocialIcon:hover{
+    font-size: 5.5rem;
+}
+    

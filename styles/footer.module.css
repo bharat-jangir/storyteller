@@ -1,0 +1,63 @@
+.FooterContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 280px;
+    background-color:purple;
+    justify-content: center;
+}
+.FooterContent{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.FooterNavigationLinks{
+    width: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    font-size: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: max-content;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+.FooterNavigationLinks a{
+    padding: 10px;
+    text-shadow: 6px 3px 4px black;}
+.CopyRightClaim{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    height: max-content;
+    margin: auto 0px 0px 0px;
+    border-top: 1px solid black;
+}
+.SocialmediaContainer{
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    
+}
+.Socialmedia_content{
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.socialIcons{
+    margin: auto 10px;
+    color: rgb(250, 143, 250);
+    box-shadow: 2px 2px 5px rgb(165, 25, 165);
+}
+.socialIcons:hover{
+    transform: translate(-2px,4px)
+}
