@@ -1,6 +1,5 @@
 {
   "name": "stroyteller",
-  "homepage": "https://Bharat-jangir.github.io/storyteller",
   "private": true,
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "version": "1.0.0",
@@ -8,11 +7,10 @@
   "author": "Bharat Jangir",
   "license": "ISC",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d build",
     "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
+    "heroku-postbuild":"npm run build",
     "lint": "next lint"
   },
   "dependencies": {

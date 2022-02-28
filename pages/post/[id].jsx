@@ -15,6 +15,7 @@ export async function getServerSideProps(context) {
     };
 }
 
+
 function Post() {
     const router = useRouter()
     var { id } = router.query
