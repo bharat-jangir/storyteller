@@ -90,7 +90,7 @@ function CreateNewPost({ CreatePost }) {
                         {
                             content.map((content,index)=>{
                                 return(
-                                    <p>
+                                    <p key={index}>
                                     <p>{content.heading}</p>,
                                     <p>{content.content}</p>
                                     </p>

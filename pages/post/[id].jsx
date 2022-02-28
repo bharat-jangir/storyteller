@@ -29,8 +29,7 @@ function Post() {
             setPost(post.data)
         }
         getPost()
-        // id=router.query
-    }, [])
+    },[])
 
   
  console.log(typeof(post.content));

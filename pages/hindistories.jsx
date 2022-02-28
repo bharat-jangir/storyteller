@@ -8,7 +8,7 @@ import AffiliateProducts from '../components/AffiliateProducts'
 import Footer from '../components/Footer'
 import Link from "next/link"
 
-function hindistories() {
+function Hindistories() {
 
     const [posts, setPosts] = useState([])
 
@@ -81,4 +81,4 @@ function hindistories() {
   )
 }
 
-export default hindistories
+export default Hindistories

@@ -71,9 +71,9 @@ function AffiliateProducts() {
           {
             Products.map((product, index) => {
               return (
-                <Link href={product.link} >
+                <Link href={product.link} key={index} >
                 <a  target="_blank">
-                  <Card className={styles.Affiliate_product} sx={{ maxWidth: 280, mx: 0.5, my: 0.5 }} key={index}>
+                  <Card className={styles.Affiliate_product} sx={{ maxWidth: 280, mx: 0.5, my: 0.5 }}>
                     <CardActionArea style={{ display: "flex", flexDirection: "column" }}>
                       <CardMedia
                         component="img"

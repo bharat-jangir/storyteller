@@ -8,8 +8,9 @@ import AffiliateProducts from '../components/AffiliateProducts'
 import Footer from '../components/Footer'
 import Link from "next/link"
 
-function englishstories() {
-    const [posts, setPosts] = useState([])
+function Englishstories() {
+
+  const [posts, setPosts] = useState([])
 
   useEffect(() => {
     const getPosts = async () => {
@@ -80,4 +81,4 @@ function englishstories() {
   )
 }
 
-export default englishstories
+export default Englishstories
