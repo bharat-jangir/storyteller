@@ -25,7 +25,10 @@
 }
 .FooterNavigationLinks a{
     padding: 10px;
-    text-shadow: 6px 3px 4px black;}
+    text-shadow: 6px 3px 4px ghostwhite;
+    font-size: inherit;
+    font-weight: bold;
+}
 .CopyRightClaim{
     width: 100%;
     justify-content: center;

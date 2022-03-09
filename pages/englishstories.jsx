@@ -7,10 +7,15 @@ import { Button } from '@material-ui/core';
 import AffiliateProducts from '../components/AffiliateProducts'
 import Footer from '../components/Footer'
 import Link from "next/link"
+import Search from "../components/search"
+import CloseIcon from '@mui/icons-material/Close';
+import SearchIcon from '@material-ui/icons/Search';
+import AffiliateProductSlider from '../components/AffiliateProductSlider'
 
 function Englishstories() {
-
   const [posts, setPosts] = useState([])
+  const [search, setSearch] = useState(false)
+
 
   useEffect(() => {
     const getPosts = async () => {
@@ -31,9 +36,16 @@ function Englishstories() {
     <div>
     <Header/>
     <div className={styles.Content_container}>
+      <AffiliateProductSlider/>
         <div className={styles.Home_Container_HindiStories}>
           <div className={styles.Home_Container_HindiStories_heading}>
             <h1>English Stories</h1>
+          </div>
+          <div className={styles.Home_Container_SearchBar}>
+            <div className={styles.Home_Container_SearchBar_content}>
+              <input type="text" className={styles.SearchInput} placeholder="Search" onClick={() => setSearch(true)} />
+              <SearchIcon className={styles.searchIcon} />
+            </div>
           </div>
           <div className={styles.Allposts_or_contents}>
             {
@@ -73,6 +85,14 @@ function Englishstories() {
             <Button variant="contained" >सभी देखें</Button>
           </div> */}
         </div>
+        {
+          search &&
+          <div className={styles.SearchItems_Component_container} style={{ margin: "0px" }}>
+            <CloseIcon onClick={() => setSearch(false)} style={{ color: "red", position: "absolute" }} />
+            <Search />
+          </div>
+
+        }
         </div>
         <AffiliateProducts/>
         <Footer/>

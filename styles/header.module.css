@@ -20,6 +20,9 @@
     height: 40px;
     object-fit: contain;
 }
+.Logo_container:hover{
+    cursor: pointer;
+}
 .Links_container{
     /* background-color: antiquewhite; */
     display: flex;
@@ -45,10 +48,16 @@
     flex-wrap: wrap;
     
 }
+.Links_container a:hover{
+    border-bottom: 1px solid white;
+}
 .HamburgerIcon{
     margin: 20px 20px 0px auto;
     color: white;
     display: none;
+}
+.HamburgerIcon:hover{
+    cursor: pointer;
 }
 .Drawer_container{
     width: 100%;
@@ -72,6 +81,7 @@
 }
 .Drawer_menue a:hover{
     background-color: purple;
+    cursor: pointer;
 }
 .Drawer_CloseIcon{
     position: absolute;

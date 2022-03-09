@@ -24,37 +24,37 @@ function contact() {
             <div className={style.contact_Options}>
                 <div>
 
-                <Link href="https://www.facebook.com/manish.jangir.16144/">
                     <div className={style.SocialIcon_container}>
                     <p>Contact us on Facebook by clicking on the Icon</p>
+                <Link href="https://www.facebook.com/manish.jangir.16144/">
                     <a target="_blank">
                     Facebook
                         <FacebookIcon className={style.SocialIcon} fontSize="large" />
                     </a>
-                    </div>
                 </Link>
+                    </div>
                 </div>
                 <div>
-                <Link href="https://www.instagram.com/_bharatjangir_/">
                     <div className={style.SocialIcon_container}>
                         <p>Contact us on Instagram by clicking on the Icon</p>
+                <Link href="https://www.instagram.com/_bharatjangir_/">
                     <a target="_blank">
                     Instagram
                         <InstagramIcon className={style.SocialIcon} fontSize="large" />
                     </a>
-                    </div>
                 </Link>
+                    </div>
                 </div>
                 <div>
-                <Link href="https://api.whatsapp.com/send?phone=918058155647?text=Hi Sir">
                     <div className={style.SocialIcon_container}>
                     <p>Contact us on Whatsapp by clicking on the Icon</p>
+                <Link href="https://api.whatsapp.com/send?phone=918058155647?text=Hi Sir">
                     <a target="_blank">
                     Whatsapp
                         <WhatsAppIcon className={style.SocialIcon} fontSize="large" />
                     </a>
-                    </div>
                 </Link>
+                    </div>
                 </div>
             </div>
             <AffiliateProducts />

@@ -8,7 +8,7 @@
 .postContainer{
     width: 100%;
     /* height: 600px; */
-    background-color: brown;
+    /* background-color: brown; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@
 .postContainer_postHeading{
     width: 100%;
     /* height: 200px; */
-    background-color: red;
+    /* background-color: red; */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -28,8 +28,17 @@
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+    /* background-color: blue; */
     flex-direction: column;
     word-break: break-all;
     font-size: 1.5rem;
+}
+.Post_paragraph{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    margin: 10px auto;
+    border: 0.5px solid black;
+    padding: 0px 10px;
 }

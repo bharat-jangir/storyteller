@@ -8,6 +8,7 @@ import Footer from '../../components/Footer'
 import AffiliateProducts from '../../components/AffiliateProducts'
 import { useState, useEffect } from "react";
 import axios from 'axios'
+import AffiliateProductSlider from '../../components/AffiliateProductSlider'
 
 export async function getServerSideProps(context) {
     return {
@@ -20,7 +21,7 @@ function Post() {
     const router = useRouter()
     var { id } = router.query
 
-    
+
 
     const [post, setPost] = useState([])
 
@@ -30,10 +31,10 @@ function Post() {
             setPost(post.data)
         }
         getPost()
-    },[])
+    }, [])
 
-  
- console.log(typeof(post.content));
+
+    console.log(typeof (post.content));
 
     return (
         <div className={styles.postPageContainer}>
@@ -52,19 +53,28 @@ function Post() {
                         <h3>{post.subheading}</h3>
                     </div>
                 </div>
+                    <AffiliateProductSlider/>
                 <div className={styles.postContainer_postContent}>
                     <div>
-                   
-                    {
-                       post.content !== undefined && JSON.parse(post.content).map((post,index)=>{
-                            return(
-                                <p style={{backgroundColor:"pink"}}>{post.heading+"  "+index}</p>,
-                                <p style={{backgroundColor:"green"}}>{post.content+"  "+index}</p>
 
-                                
-                            )
-                        })
-                    }
+                        {
+                            post.content !== undefined && JSON.parse(post.content).map((post, index) => {
+                                return (
+                                    <div className={styles.Post_paragraph}>
+
+                                        <p style={{ widht: "auto", height: "auto", display: "flex", fontWeight: "bold" }}>{post.heading}</p>
+                                        <p style={{ }}>{post.content}</p>
+
+                                    </div>
+
+
+                                    
+
+
+
+                                )
+                            })
+                        }
                     </div>
                 </div>
 

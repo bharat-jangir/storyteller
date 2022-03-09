@@ -7,10 +7,16 @@ import { Button } from '@material-ui/core';
 import AffiliateProducts from '../components/AffiliateProducts'
 import Footer from '../components/Footer'
 import Link from "next/link"
+import Search from "../components/search"
+import CloseIcon from '@mui/icons-material/Close';
+import SearchIcon from '@material-ui/icons/Search';
+import AffiliateProductSlider from '../components/AffiliateProductSlider'
+
 
 function Hindistories() {
+  const [posts, setPosts] = useState([])
+  const [search, setSearch] = useState(false)
 
-    const [posts, setPosts] = useState([])
 
   useEffect(() => {
     const getPosts = async () => {
@@ -22,60 +28,78 @@ function Hindistories() {
     getPosts()
   }, [])
 
-  const date=(date)=>{
-    var _date=date.split("-"&&"T")
+  const date = (date) => {
+    var _date = date.split("-" && "T")
     return _date[0]
   }
 
   return (
     <div>
-    <Header/>
-    <div className={styles.Content_container}>
+      <Header />
+      <div className={styles.Content_container}>
+        <AffiliateProductSlider/>
         <div className={styles.Home_Container_HindiStories}>
           <div className={styles.Home_Container_HindiStories_heading}>
             <h1>हिंदी कहानियाँ</h1>
           </div>
+          <div className={styles.Home_Container_SearchBar}>
+            <div className={styles.Home_Container_SearchBar_content}>
+              <input type="text" className={styles.SearchInput} placeholder="Search" onClick={() => setSearch(true)} />
+              <SearchIcon className={styles.searchIcon} />
+            </div>
+          </div>
           <div className={styles.Allposts_or_contents}>
             {
               posts.map(data => {
-                  if(data.language==="Hindi")
-                return (
-                  <Link href={`/post/${data._id}`} key={data._id}>
-                  <div className={styles.HindiStories_Content}  >
-                    <div className={styles.Content_heading}>
-                      <h1>{data.heading}</h1>
-                    </div>
-                    <div className={styles.Content_subheading}>
-                      <h2>
-                        {data.subheading}
-                      </h2>
-                    </div>
-                    <div className={styles.Content_content}>
-                      <pre>
-                        {data.content}
-                      </pre>
-                    </div>
-                    <div className={styles.Content_date}>
-                      <p>
-                        Published At:
-                        {date(data.createdAt)}
-                      </p>
-                    </div>
-                  </div>
-                  </Link>
+                if (data.language === "Hindi")
+                  return (
+                    <Link href={`/post/${data._id}`} key={data._id}>
+                      <div className={styles.HindiStories_Content}  >
+                        <div className={styles.Content_heading}>
+                          <h1>{data.heading}</h1>
+                        </div>
+                        <div className={styles.Content_subheading}>
+                          <h2>
+                            {data.subheading}
+                          </h2>
+                        </div>
+                        <div className={styles.Content_content}>
+                          <pre>
+                            {data.content}
+                          </pre>
+                        </div>
+                        <div className={styles.Content_date}>
+                          <p>
+                            Published At:
+                            {date(data.createdAt)}
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
 
 
-                )
+                  )
               })
             }
+
           </div>
           {/* <div className={styles.Seemore_btn}>
             <Button variant="contained" >सभी देखें</Button>
           </div> */}
         </div>
-        </div>
-        <AffiliateProducts/>
-        <Footer/>
+        {
+          search &&
+          <div className={styles.SearchItems_Component_container} style={{ margin: "0px" }}>
+            <CloseIcon onClick={() => setSearch(false)} style={{ color: "red", position: "absolute" }} />
+            <Search />
+          </div>
+
+        }
+
+      </div>
+      <AffiliateProducts />
+      <Footer />
+
 
     </div>
   )

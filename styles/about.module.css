@@ -1,0 +1,22 @@
+.About_ContentContainer{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+
+}
+.About_content{
+    width: 90%;
+    /* background-color: green; */
+    display: flex;
+    flex-wrap: wrap;
+    font-size:1.5rem
+}
+.About_OwnerImageConatiner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}

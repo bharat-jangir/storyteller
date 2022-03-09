@@ -1,0 +1,28 @@
+    .AffiliateProductSlider_container{
+        /* background-color: brown; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        overflow-x: scroll;
+        flex-direction: row;
+        width: 100%;
+        justify-content: stretch;
+        margin:10px 0px ;
+        scroll-snap-type: x mandatory;
+    }
+   
+    /* ////////////////chrome scrollbar */
+    .AffiliateProductSlider_container::-webkit-scrollbar{
+        width: 8px;
+        /* background-color: red; */
+        height: 5px;
+    }
+    .AffiliateProductSlider_container::-webkit-scrollbar-thumb{
+        background-color: rgba(128, 128, 128, 0.377);
+        border: 1px solid black;
+        background-clip: content-box;
+    }
+    /* //////////////////////Firefox scrollbar */
+    .AffiliateProductSlider_container{
+        scrollbar-width: thin;
+        scrollbar-color: rgba(128, 128, 128, 0.377);
+    }

@@ -29,7 +29,7 @@ app.prepare().then(() => {
 
 
     ////mongoose connection
-    mongoose.connect(process.env.MONGODB_LOCAL_URI).then(res => {
+    mongoose.connect(process.env.MONGODB_URI).then(res => {
         console.log("mongoose connected successfully!");
     })
 

@@ -1,0 +1,109 @@
+.SearchComponent_container{
+    width: 100%;
+    height: 100%;
+    /* background-color:green; */
+    display: flex;
+    flex-direction: column;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    /* animation-fill-mode: none; */
+    /* animation-play-state: running; */
+    animation-name:swipecomponent;
+}
+.Home_Container_SearchBar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid black;
+}
+.Home_Container_SearchBar_content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Home_Container_SearchBar input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 280px;
+}
+.Home_Container_SearchBar input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+.Home_Container_SearchBar input[type=text]:focus {
+  width: 280px;
+}
+.searchIcon{
+    position: absolute;
+    right: 0px;
+    color: white;
+    background-color: purple;
+    width: 30px;
+    height: 30px;
+}
+.SearchedItem_container{
+    width: 80%;
+    height: 100%;
+    /* background-color: blue; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes swipecomponent {
+    from{
+        margin: 500px 0px 0px 0px;
+    }
+    to{
+        margin: 0px;
+    }
+    
+}
+
+/* ///////////media section//////// */
+/* ///////////media section//////// */
+/* ///////////media section//////// */
+@media only screen and (max-width:768px) {
+    .HindiStories_Content{
+        width: 90%;
+        /* height: 150px; */
+        margin:1px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    
+    }
+    .Home_Container_HindiStories{
+        width: 90%;
+        /* max-height: 600px; */
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1440px;  
+        justify-content: center;
+        margin: 10px auto auto auto;
+        
+    }
+    .Content_content{
+        display: none;
+    }
+    .Content_container{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .Content_content{
+        display: none;
+    }
+   
+}
