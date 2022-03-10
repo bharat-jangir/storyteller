@@ -60,7 +60,7 @@ function Post() {
                         {
                             post.content !== undefined && JSON.parse(post.content).map((post, index) => {
                                 return (
-                                    <div className={styles.Post_paragraph}>
+                                    <div className={styles.Post_paragraph} key={post._id}>
 
                                         <p style={{ widht: "auto", height: "auto", display: "flex", fontWeight: "bold" }}>{post.heading}</p>
                                         <p style={{ }}>{post.content}</p>
