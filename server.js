@@ -29,7 +29,10 @@ app.prepare().then(() => {
 
 
     ////mongoose connection
-    mongoose.connect(process.env.MONGODB_URI).then(res => {
+    mongoose.connect(process.env.MONGODB_URI,{
+        useUnifiedTopology:true,
+        useNewUrlParser:true
+    }).then(res => {
         console.log("mongoose connected successfully!");
     })
 
@@ -53,7 +56,7 @@ app.prepare().then(() => {
 
     server.listen(process.env.PORT || 3000, (err) => {
         if (err) throw err
-        console.log(`> Ready on http://localhost:${process.env.PORT}`)
+        console.log(`> Ready on http://localhost:${process.env.PORT || 3000}`)
     })
 }).catch(err => {
     console.log("there is a problem");
