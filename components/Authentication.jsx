@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
 import Image from "next/image"
-import Logo from "../Images/Logo.png"
+import Logo from "../public/Images/logo.png"
 import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
