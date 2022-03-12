@@ -21,7 +21,7 @@ app.prepare().then(() => {
 
     //setup cors
     var corsOptions = {
-        origin: ['http://localhost:3000','https://articlewriterblog.herokuapp.com/'],
+        origin: 'http://localhost:3000' || process.env.BASE_URL,
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'HEAD'],
         optionsSuccessStatus: 200 // For legacy browser support
     }
@@ -29,7 +29,7 @@ app.prepare().then(() => {
 
 
     ////mongoose connection
-    mongoose.connect(process.env.MONGODB_URI,{
+    mongoose.connect(process.env.MONGODB_URL,{
         useUnifiedTopology:true,
         useNewUrlParser:true
     }).then(res => {
