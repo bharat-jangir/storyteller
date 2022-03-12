@@ -21,7 +21,7 @@ app.prepare().then(() => {
 
     //setup cors
     var corsOptions = {
-        origin: 'http://localhost:3000' || process.env.BASE_URL,
+        origin:process.env.BASE_URL || 'http://localhost:3000/',
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'HEAD'],
         optionsSuccessStatus: 200 // For legacy browser support
     }
