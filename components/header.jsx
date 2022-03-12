@@ -1,7 +1,7 @@
 import styles from "../styles/header.module.css"
 import Link from "next/link"
 import Image from "next/image"
-import Logo from "../Images/Logo.png"
+import Logo from "../public/Images/logo.png"
 import MenuIcon from '@mui/icons-material/Menu';
 import Router from "next/router"
 import React, { useState } from "react";
@@ -45,7 +45,9 @@ function Header() {
         <div className={styles.Logo}>
           <Image src={Logo} alt="logo"></Image>
         </div>
-        <h1>Story Teller</h1>
+        <div className={styles.Logo_name}>
+        <p>Article Writer</p>
+        </div>
       </div>
 
       <div className={styles.Links_container}>

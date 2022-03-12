@@ -7,7 +7,7 @@
   "author": "Bharat Jangir",
   "license": "ISC",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "nodemon server.js",
     "build": "next build",
     "start": "node server.js -p $PORT",
     "heroku-postbuild":"npm run build",

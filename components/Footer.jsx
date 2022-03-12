@@ -34,7 +34,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className={styles.CopyRightClaim}>
-                    <p>© 2022-23 Story Teller® All rights reserved.</p>
+                    <p>© 2022-23 Article Writer</p>
                 </div>
 
             </div>
