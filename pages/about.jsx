@@ -40,7 +40,7 @@ function about() {
 
             </div>
             <div>
-              <Image src={OwnerImg} alt="Owner" width="220px" height="337px"/>
+              <Image src="/Images/owner.jpeg" alt="Owner" width="220px" height="337px"/>
             </div>
             <div>
               <Link href="/contact" ><span style={{ color: "blue", borderBottom: "1px solid black" }}>Contact</span></Link>
