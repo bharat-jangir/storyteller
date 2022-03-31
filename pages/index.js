@@ -44,6 +44,7 @@ export default function Home() {
         <meta name="keywords" content="blogging,article writing,amit agrwal,website,information,knowledge,details" />
         <meta name="description" content="This site provides wonderfull and valuable content with simplicity to understand "/>
         <link rel="icon" type="image/png" sizes="16x16" href="/Images/logo.png" />
+          <meta name="google-site-verification" content="nmc4bHIn9cm7aEBWXqy-8sDo8d_wjwNJw2SQK1TdK-M" />
          </Head>
       <Header />
       <div>
